@@ -23,7 +23,7 @@ function geocodeLatLng() {
 
                         
                         temp = document.getElementById("temp");
-                        temp.innerHTML = Math.round(data.main.temp);
+                        temp.innerHTML = Math.round(data.main.temp) +"°";
 
                         weatherDesc = document.getElementById("condition");
                         weatherDesc.innerHTML = data.weather[0].description;
