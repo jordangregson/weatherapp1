@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="temp">00°</div>
-    <div id="condition">Condition</div>
-    
+    <div id="grid-container">
+        <div id="today-container">
+            <h4 class="todays-date date">January 1st, 2020</h4>
+            <div class="today-weather-img-d img">
+                <img src="partly-cloudy-desktop.png">
+            </div>
+            <div class="today-weather-img-m img">
+                <img src="partly-cloudy-mobile.png">
+            </div>
+
+            <h4 id="todays-temp">00°</h4>
+            <div id="todays-feels-like">Feels like</div>
+            <div id="todays-condition">Condition</div>
+        </div>
+
+
+        <div id="tomorrow-text-m">
+            <div id="tomorrow-text">Tomorrow</div>
+            <div id="arrows">
+                <div id="arrow-l">
+                    <img src="arrow.png" alt="arrow">
+                </div>
+                <div id="arrow-r">
+                    <img src="arrow.png" alt="arrow">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="tomorrow-container">
+            <div class="tomorrow-message date">Tomorrows predicted <p>forecast</p>
+            </div>
+            <div class="tomorrow-weather-img-d img">
+                <img src="sunny-desktop.png">
+            </div>
+            <div class="tomorrow-weather-img-m img">
+                <img src="sunny-mobile.png">
+            </div>
+            <div class="tomorrows-temp temp">00°</div>
+            <div id="tomorrows-feels-like">Feels like</div>
+            <div class="tomorrows-condition condition">Condition</div>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>

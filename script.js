@@ -1,8 +1,10 @@
 let lat;
 let lng;
 
-let weatherDesc;
-let temp;
+let todayTemp;
+let todayFeelsLike;
+let todayCondition;
+
 
 
 function geocodeLatLng() {
@@ -19,16 +21,26 @@ function geocodeLatLng() {
                         return response.json();
                     })
                     .then(data => {
-                        //console.log(data);
+                        console.log(data);
+
+                        //Todays Weather
+                        
+                        todayTemp = document.getElementById("todays-temp");
+                        todayTemp.innerHTML = Math.round(data.main.temp) +"°";
+
+                        todayFeelsLike = document.getElementById("todays-feels-like");
+                        todayFeelsLike.innerHTML = "Feels like " + Math.round(data.main.feels_like) + "°";
+
+                        todayCondition = document.getElementById("todays-condition");
+                        todayCondition.innerHTML = data.weather[0].description;
+
+
+                        //Tomorrows Weather
 
                         
-                        temp = document.getElementById("temp");
-                        temp.innerHTML = Math.round(data.main.temp) +"°";
 
-                        weatherDesc = document.getElementById("condition");
-                        weatherDesc.innerHTML = data.weather[0].description;
 
-                        console.log(data.main);
+                        
                     })
 
             })
