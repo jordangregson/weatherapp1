@@ -1,5 +1,5 @@
-let lat;
-let lng;
+let todayLat;
+let todayLng;
 
 let todayTemp;
 let todayFeelsLike;
@@ -11,17 +11,17 @@ function geocodeLatLng() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             position => {
-                let lat = position.coords.latitude;
-                let lng = position.coords.longitude;
+                let todayLat = position.coords.latitude;
+                let todayLng = position.coords.longitude;
 
-                const api_url = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=imperial&appid=554d1f11a8df60eddbddf39182838a79`;
+                const api_url = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${todayLat}&lon=${todayLng}&units=imperial&appid=554d1f11a8df60eddbddf39182838a79`;
 
                 fetch(api_url)
                     .then(response => {
                         return response.json();
                     })
                     .then(data => {
-                        console.log(data);
+                        
 
                         //Todays Weather
                         
@@ -32,15 +32,7 @@ function geocodeLatLng() {
                         todayFeelsLike.innerHTML = "Feels like " + Math.round(data.main.feels_like) + "°";
 
                         todayCondition = document.getElementById("todays-condition");
-                        todayCondition.innerHTML = data.weather[0].description;
-
-
-                        //Tomorrows Weather
-
-                        
-
-
-                        
+                        todayCondition.innerHTML = data.weather[0].main;
                     })
 
             })
