@@ -5,8 +5,6 @@ let todayTemp;
 let todayFeelsLike;
 let todayCondition;
 
-
-
 function geocodeLatLng() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -21,18 +19,30 @@ function geocodeLatLng() {
                         return response.json();
                     })
                     .then(data => {
-                        
+
 
                         //Todays Weather
-                        
+
                         todayTemp = document.getElementById("todays-temp");
-                        todayTemp.innerHTML = Math.round(data.main.temp) +"°";
+                        todayTemp.innerHTML = Math.round(data.main.temp) + "°";
 
                         todayFeelsLike = document.getElementById("todays-feels-like");
                         todayFeelsLike.innerHTML = "Feels like " + Math.round(data.main.feels_like) + "°";
 
                         todayCondition = document.getElementById("todays-condition");
                         todayCondition.innerHTML = data.weather[0].main;
+
+/*
+                        let sunny = document.createElement("img");
+                        sunny.src = "sunny-desktop.png";
+                        
+                        let partlyCloudy = document.createElement("img");
+                        partlyCloudy.src = "partly-cloudy-desktop.png"
+
+                        if(data.weather[0].main == "Rain") {
+                        var src = document.getElementById("today-weather-img-d");
+                        src.appendChild(sunny);
+                        }*/
                     })
 
             })

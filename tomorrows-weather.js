@@ -34,6 +34,8 @@ function geocodeLatLng() {
                         tomTemp = document.getElementById("tomorrows-temp");
                         tomTemp.innerHTML = Math.round(data.daily[0].temp.day) +"°";
 
+                        
+
                         tomFeelsLike = document.getElementById("tomorrows-feels-like");
                         tomFeelsLike.innerHTML = "It's gonna feel like " + Math.round(data.daily[0].feels_like.day) + "°";
 
