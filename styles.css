@@ -16,17 +16,17 @@ body {
     display: grid;
 }
 
-.today-weather-img-m {
+#today-weather-img-m {
     display: none;
 }
 
-.tomorrow-weather-img-m {
+#tomorrow-weather-img-m {
     display: none;
 }
 
 /*Date*/
 
-.date {
+#todays-date {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 10px; 
@@ -36,24 +36,30 @@ body {
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-}
 
-.todays-date {
     font-size: 42pt;
 }
 
-.tomorrow-message {
+#tomorrow-message {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 10px;
+
+    font-family: 'Roboto', sans-serif;
+
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     
     font-size: 30pt;
 }
 
+#tomorrow-weather-img-d {
+    text-align: center;
+}
 
-
-.img {
-    text-align: center; 
+#today-weather-img-d {
+    text-align: center;
 }
 
 /*Temperature*/
@@ -157,28 +163,33 @@ body {
     }
 
     
-    /*Date*/
-    
-    .date {
+    /*Date*/    
+    #todays-date {
         text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px; 
+        padding-top: 25px;
+        padding-bottom: 15px; 
     
         font-family: 'Roboto', sans-serif;
     
         color: white;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
-    }
-    
-    .todays-date {
+
         font-size: 30pt;
     }
     
-    .tomorrow-message {
+    #tomorrow-message {
         text-align: center;
         padding-top: 40px;
         padding-bottom: 10px;
+    
+        font-family: 'Roboto', sans-serif;
+    
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+
+
         
         font-size: 20pt;
     }
@@ -186,33 +197,31 @@ body {
 
     /*Changing images depending on the screen size*/
 
-    .today-weather-img-m {
+    #today-weather-img-m {
+        text-align: center;
         display: block;
     }
         
-    .tomorrow-weather-img-m {
+    #tomorrow-weather-img-m {
+        text-align: center;
         display: block;
     }
     
-    .today-weather-img-d {
+    #today-weather-img-d {
         display: none;
     }
         
-    .tomorrow-weather-img-d {
+    #tomorrow-weather-img-d {
         display: none;
-    }
-    
-    .img {
-        text-align: center; 
     }
 
     
     /*Temperature*/
     
-    .temp {
+    #todays-temp {
         text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 70px;
+        padding-bottom: 15px;
     
         font-family: 'Roboto', sans-serif;
     
@@ -220,15 +229,28 @@ body {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
 
-        font-size: 70pt;
+        font-size: 50pt;
     }
 
+    #tomorrows-temp {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    
+        font-family: 'Roboto', sans-serif;
+    
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+
+        font-size: 50pt;
+    }
     
     /*Feels like*/
-    
-    .feels-like {
+   
+    #todays-feels-like {
         text-align: center;
-        padding-top: 10px;
+        padding-top: 5px;
         padding-bottom: 10px;
     
         font-family: 'Roboto', sans-serif;
@@ -237,12 +259,26 @@ body {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
 
-        font-size: 25pt;
+        font-size: 20pt;
+    }
+
+    #tomorrows-feels-like {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    
+        font-family: 'Roboto', sans-serif;
+    
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+
+        font-size: 20pt;
     }
     
     /*Condition*/
     
-    .condition {
+    #todays-condition {
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -256,15 +292,28 @@ body {
         font-size: 40pt;
     }
 
-    .tomorrows-condition {
-        padding-bottom: 60px;
+    #tomorrows-condition {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+        font-family: 'Roboto', sans-serif;
+    
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+
+        font-size: 40pt;
+
+        padding-bottom: 50px;
     }
 
-    .tomorrow-message {
-        padding-top: 70px;
+    #tomorrow-message {
+        padding-top: 50px;
     }
 
     #tomorrow-text-m {
+        padding-top: 5px;
         display: block;
     }
 
@@ -283,14 +332,17 @@ body {
     }
 
     #arrows {
+        
         display: flex;
     }
 
     #arrow-l {
-        padding-left: 30vw;
+        padding-left: 20vw;
     }
 
     #arrow-r {
-        padding-left: 30vw;
+        padding-left: 50vw;
     }
+        
+        
 }
