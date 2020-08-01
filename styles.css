@@ -148,10 +148,7 @@ a {
 }
 
 #about {
-    padding-top: 100px;
-    padding-bottom: 30px;
-    padding-left: 180px;
-    padding-right: 180px;
+    display: flex;
 }
 
 #about-btn {
@@ -412,5 +409,21 @@ a {
         padding-left: 50vw;
     }
         
+    
+    
+    #about-btn {
+        text-align: center;
+    
+        border: 6px solid white;
+        border-radius: 15px;
+    
+        font-size: 50px;
+        font-family: 'Roboto', sans-serif;
+    
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
         
+        
+    }
 }
