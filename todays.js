@@ -22,8 +22,6 @@ function geocodeLatLng() {
 
 
                         //Todays Weather
-                    
-                        
 
                         todayTemp = document.getElementById("todays-temp");
                         todayTemp.innerHTML = Math.round(data.main.temp) + "°";

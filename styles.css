@@ -3,7 +3,11 @@
 }
 
 body {
-    background: #15E3FF;
+    background: rgb(112, 165, 214);
+}
+
+a {
+    text-decoration: none;
 }
 
 #tomorrow-text-m {
@@ -143,9 +147,91 @@ body {
     font-size: 40pt;
 }
 
+#about {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
 
+#about-btn {
+    text-align: center;
 
+    border: 6px solid white;
+    border-radius: 15px;
 
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*ABOUT PAGE*/
+
+#title {
+    padding-top: 20px;
+    
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    
+    text-align: center;
+
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#author {
+    padding-top: 5px;
+    
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    
+    text-align: center;
+
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#description {
+    padding-top: 25px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+    color: white;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: black;
+
+    line-height: 2;
+}
+
+#description::first-line {
+    text-indent: 5%;
+}
+
+#sources-used-text {
+    padding-top: 20px;
+    
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    
+    text-align: center;
+
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
 
 @media (max-width: 1200px){
     #grid-container {
