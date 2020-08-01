@@ -8,6 +8,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 #tomorrow-text-m {
@@ -149,6 +150,10 @@ a {
 
 #about {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-bottom: 20px;
 }
 
 #about-btn {
@@ -170,12 +175,35 @@ a {
     padding-bottom: 10px;
 }
 
+#back {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#back-btn {
+    border: 4px solid white;
+    border-radius: 15px;
+
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /*ABOUT PAGE*/
 
 #title {
     padding-top: 20px;
     
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Roboto', sans-serif;
     
     text-align: center;
@@ -186,9 +214,9 @@ a {
 }
 
 #author {
-    padding-top: 5px;
+    padding-top: 15px;
     
-    font-size: 25px;
+    font-size: 35px;
     font-family: 'Roboto', sans-serif;
     
     text-align: center;
@@ -203,11 +231,11 @@ a {
 
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Roboto', sans-serif;
 
     color: white;
-    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-width: .2px;
     -webkit-text-stroke-color: black;
 
     line-height: 2;
@@ -229,6 +257,56 @@ a {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
+
+.api-link {
+    padding-top: 20px;
+}
+
+.source {
+    text-align: center;
+    line-height: 2;
+    
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+    color: white;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: black;
+
+}
+
+.about-link {
+    color: rgb(59, 59, 59);
+}
+
+#github {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+
+#github-btn {
+    text-align: center;
+
+    border: 6px solid white;
+    border-radius: 15px;
+
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
 @media (max-width: 1200px){
     #grid-container {
