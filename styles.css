@@ -16,14 +16,6 @@ body {
     display: grid;
 }
 
-#today-weather-img-m {
-    display: none;
-}
-
-#tomorrow-weather-img-m {
-    display: none;
-}
-
 /*Date*/
 
 #todays-date {
@@ -54,11 +46,11 @@ body {
     font-size: 30pt;
 }
 
-#tomorrow-weather-img-d {
+#tomorrow-weather-img{
     text-align: center;
 }
 
-#today-weather-img-d {
+#today-weather-img{
     text-align: center;
 }
 
@@ -196,23 +188,13 @@ body {
     
 
     /*Changing images depending on the screen size*/
-
-    #today-weather-img-m {
-        text-align: center;
-        display: block;
-    }
-        
-    #tomorrow-weather-img-m {
-        text-align: center;
-        display: block;
-    }
     
-    #today-weather-img-d {
-        display: none;
+    #today-weather-img {
+        text-align: center;
     }
         
-    #tomorrow-weather-img-d {
-        display: none;
+    #tomorrow-weather-img {
+        text-align: center;
     }
 
     
