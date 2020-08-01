@@ -402,10 +402,12 @@ a {
     }
 
     #arrow-l {
+        display: flex;
         padding-left: 20vw;
     }
 
     #arrow-r {
+        display: flex;
         padding-left: 50vw;
     }
         
